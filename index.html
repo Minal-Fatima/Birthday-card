@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Birthday Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="card-container">
+        <div class="card" id="card">
+            <img src="https://media1.tenor.com/m/tRepwipAbJAAAAAC/hug-love.gif" alt="Heart" class="heart-image">
+            <div class="message-box" id="message-box">
+                <p id="love-quote"></p>
+            </div>
+            <button class="open-button" onclick="openCard()">press here </button>
+            <button class="close-button" onclick="closeCard()" style="display:none;">Close</button>
+        </div>
+    </div>
+
+    <!-- Canvas for hearts -->
+    <canvas id="heart-canvas"></canvas>
+
+    <audio id="background-music" src="romantic_music.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
